@@ -34,11 +34,27 @@
 # # output:
 # "Hello World"
 
-fruits = ['apple', 'banana', 'orange', 'strawberry']
-vegetables = ['lettuce', 'cucumber', 'carrots']
-fruits_and_vegetables = fruits + vegetables
-print(fruits_and_vegetables)
-salad = 3 * vegetables
-print(salad)
+# fruits = ['apple', 'banana', 'orange', 'strawberry']
+# vegetables = ['lettuce', 'cucumber', 'carrots']
+# fruits_and_vegetables = fruits + vegetables
+# print(fruits_and_vegetables)
+# salad = 3 * vegetables
+# print(salad)
 
+# my_list = [1, 'Zen', 'hi']
+# print(max(my_list))
 
+# x = 55
+# if x > 10:
+#     	print("bigger than 10")
+# elif x > 50:
+#     	print("bigger than 50")
+# else:
+#     	print("smaller than 10")
+
+# Challenge 1: Fix the range!
+for val in "string":
+    if val == "i":
+        break
+    print(val)
+# output: s, t, r
