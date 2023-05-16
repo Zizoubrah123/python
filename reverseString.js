@@ -15,7 +15,7 @@ const str1 = "object oriented programming";
 
 function stringReverse(str1) {
     var acronym = "";
-    
+
     for (var i= 0; i < str1.length; i++){
         if (str1[i] = "")
         str1 = str1[i+1];
@@ -23,7 +23,6 @@ function stringReverse(str1) {
 
     
 }
-
 
 
 
