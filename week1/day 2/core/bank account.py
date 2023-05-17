@@ -30,9 +30,9 @@ class BankAccount:
 
 azizBarrah = BankAccount(0.01, 0,)
 
-azizBarrah.deposit(100)
-azizBarrah.withdraw(20)
-azizBarrah.yield_interest()
-azizBarrah.display_account_info()
+azizBarrah.deposit(100).withdraw(20).yield_interest().display_account_info()
+# azizBarrah
+# azizBarrah
+# azizBarrah
 
 
