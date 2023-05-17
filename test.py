@@ -178,7 +178,7 @@ class BankAccount:
 azizBarrah = BankAccount(0.01, 0,)
 maramBetaib = BankAccount(0.01, 0,)
 
-azizBarrah.deposit(30).deposit(20).deposit(10).withdraw(50).yield_interest().display_account_info()
-maramBetaib.deposit(100).deposit(50).withdraw(30).withdraw(20).withdraw(10).withdraw(30).yield_interest().display_account_info()
+azizBarrah.deposit(30).deposit(20).deposit(10).display_account_info().withdraw(50).yield_interest().display_account_info()
+maramBetaib.deposit(100).deposit(50).display_account_info().withdraw(30).withdraw(20).withdraw(10).withdraw(30).yield_interest().display_account_info()
 
 
