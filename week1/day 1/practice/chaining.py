@@ -10,7 +10,7 @@ class User:
         self.gold_card_points = gold_card_points
 
     def display_info (self):
-        print(f"Hello, my name is {self.first_name} {self.last_name} my email is {self.email} and im {self.age} years old")
+        print(f"Hello, my name is {self.first_name} {self.last_name} my email is {self.email} and im {self.age} years old ")
         return self
     def enrole (self):
         self.is_rewards_member = True
