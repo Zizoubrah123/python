@@ -1,24 +1,21 @@
 def countdown(n):
     return list(range(n, -1, -1))
 
-countdown_list = countdown(5)
-print(countdown_list)
+print(countdown(5))
+
 
 
 def print_and_return(z):
-    print(a[0])
-    return (a[1])
+    print(0)
+    return (1)
 
-a = [1,2]
-print_return = print_and_return(a)
+print(print_and_return([1,2]))
 
 
-def plus_list(a):
+def first_plus_length(a):
     return a[0] + len(a)
 
-a = [1,2,3,4,5]
-b = plus_list(a)
-print (b)
+print(first_plus_length([1,2,3,4,5]))
 
 
 def new_list (aze):
@@ -26,11 +23,9 @@ def new_list (aze):
     if len(aze) > 2:
         for i in range(len(aze)):
             print(aze[2])
-            return (aze[::-2])
+            return (aze[::2])
 
-aze = [1,2,3,4,5]
-ab = new_list(aze)
-print(ab)
+print(new_list([5,2,3,2,1,4]))
 
 
 def integers (size, value):
