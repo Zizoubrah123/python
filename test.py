@@ -274,16 +274,31 @@
 # print(person)
 
 
-capitals = {"Washington":"Olympia","California":"Sacramento","Idaho":"Boise","Illinois":"Springfield","Texas":"Austin","Oklahoma":"Oklahoma City","Virginia":"Richmond"}
-# another way to iterate through the keys
-for key in capitals.keys():
-    print(key)
-# output: Washington, California, Idaho, Illinois, Texas, Oklahoma, Virginia
-#to iterate through the values
-for val in capitals.values():
-    print(val)
-# output: Olympia, Sacramento, Boise, Springfield, Austin, Oklahoma City, Richmond
-#to iterate through both keys and values
-for key, val in capitals.items():
-    print(key, " = ", val)
-# output: Washington = Olympia, California = Sacramento, Idaho = Boise, etc
+# capitals = {"Washington":"Olympia","California":"Sacramento","Idaho":"Boise","Illinois":"Springfield","Texas":"Austin","Oklahoma":"Oklahoma City","Virginia":"Richmond"}
+# # another way to iterate through the keys
+# for key in capitals.keys():
+#     print(key)
+# # output: Washington, California, Idaho, Illinois, Texas, Oklahoma, Virginia
+# #to iterate through the values
+# for val in capitals.values():
+#     print(val)
+# # output: Olympia, Sacramento, Boise, Springfield, Austin, Oklahoma City, Richmond
+# #to iterate through both keys and values
+# for key, val in capitals.items():
+#     print(key, " = ", val)
+# # output: Washington = Olympia, California = Sacramento, Idaho = Boise, etc
+
+class Player:
+    def __init__(self, name, age, position, team):
+        self.name = name
+        self.age = age
+        self.position = position
+        self.team = team
+
+
+kevin = {"name": "Kevin Durant", "age":34, "position": "small forward", "team": "Brooklyn Nets"}
+
+# Uncomment the line below to test
+# player_kevin = Player(kevin)
+player_kevin = Player(kevin["name"], kevin["age"], kevin["position"], kevin["team"])
+print(player_kevin.name)
