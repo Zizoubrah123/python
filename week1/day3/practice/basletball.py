@@ -7,7 +7,6 @@ class Player:
 
     def __repr__(self):
         display = f"Player: {self.name}, {self.age} y/o, pos: {self.position}, team: {self.team}"
-
         return display
 
 kevin = {
