@@ -289,10 +289,28 @@
 # # output: Washington = Olympia, California = Sacramento, Idaho = Boise, etc
 
 # Player class with updated constructor
-import urllib.request
-response = urllib.request.urlopen("http://www.codingdojo.com")
-html = response.read()
-print(html)
 
+class dojo_Store :
+    store_name = "dojoStore"
+    
+    def __init__(self,name, price, category):
+        self.name = name
+        self.price = price
+        self.category = category
+
+    def price_update(self, percent_change, is_increased):
+        if self.price > 25:
+            self.price = (self.price / percent_change) *100
+            print (f"{self.name} is now {self.price}")
+            return self
+        elif self.price < 25:
+            self.price = self.price + is_increased
+            return print (f"{self.name} is {self.price}$ now ({self.category})")
+
+
+
+food_potato = dojo_Store ("chicken_breast", 20, "chicken")
+
+food_potato.price_update(20, 10)
 
 

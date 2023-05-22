@@ -56,7 +56,7 @@ class User:
 azizBarrah = User("aziz", "barrah@gmail.com")
 
 azizBarrah.make_deposit(100)
- 
+
 
 
 
