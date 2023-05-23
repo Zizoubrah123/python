@@ -1,9 +1,9 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
-@app.route('/play/<int:num>')
-def hello_world(num):
-    return render_template('index.html', num=num)
+@app.route('/play/<int:num>/<color>')
+def hello_world(num, color):
+    return render_template('index.html', num=num, color=color)
 
 # @app.route('/play/<string:banana>/<int:num>')
 # def repeat(banana, num):
