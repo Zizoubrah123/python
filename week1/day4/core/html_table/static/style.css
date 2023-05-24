@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: auto;
+    background-color: antiquewhite  ;
+    width: 245px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
