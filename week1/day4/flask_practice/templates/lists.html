@@ -9,13 +9,13 @@
 </head>
 
 <body>
+
     <h2>random numbers</h2>
     <ul>
         {% for num in random_numbers %}
-        <li>{{num}}</li>
+            <li>{{ num }}</li>
         {% endfor %}
     </ul>
-    <h2>students</h2>
     <table>
         <thead>
             <tr>
@@ -24,10 +24,10 @@
             </tr>
         </thead>
         <tbody>
-            {% for students in students %}
+            {% for student in students %}
             <tr>
-                <td>{{students['name']}}</td>
-                <td>{{students['age']}}</td>
+                <td>{{student['name']}}</td>
+                <td>{{student['age']}}</td>
             </tr>
             {% endfor %}
         </tbody>
