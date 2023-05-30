@@ -1,0 +1,22 @@
+INSERT  into dojos (name)
+values ('snox'), ('mitski'), ('guts')
+
+
+DELETE FROM dojos
+where id= 1 ;
+DELETE FROM dojos
+where id= 2;
+DELETE FROM dojos
+where id= 3;
+
+INSERT INTO dojos (name)
+VALUES ('snox') ,('aziz'),('mitski')
+
+INSERT INTO ninja ( first_name, last_name, age, dojo_id)
+values ( 'adem', 'barrah', 16,1), ('aziz', 'barrah',19,2), ('maram', 'betaib',17, 3)
+
+SELECT * FROM ninja
+where id=1;
+SELECT * FROM ninja
+WHERE id= 3
+

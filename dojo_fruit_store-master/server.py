@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/')         
 def index():
     
-    return render_template("index.html")
+    return render_template("index.html",strawberry=strawberry, raspberry=raspberry, apple=apple, first_name=first_name, last_name=last_name, student_id=student_id)
 
 @app.route('/checkout', methods=['POST'])         
 def checkout():
@@ -16,7 +16,11 @@ def checkout():
     last_name = request.form['last_name']
     student_id = request.form['student_id']
     print(request.form)
-    return render_template("checkout.html", strawberry=strawberry, raspberry=raspberry, apple=apple, first_name=first_name, last_name=last_name, student_id=student_id  )
+    return redirect("/checkout"  )
+
+
+
+
 
 @app.route('/fruits')
 def fruits():
