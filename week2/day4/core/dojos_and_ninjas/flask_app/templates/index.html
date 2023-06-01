@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>dojo and ninja</title>
+</head>
+<form action="/dojos" method="POST">
+<body>
+    <h1 style="margin-left: 1100px;">all Dojos</h1>
+    
+<div style="display: flex; justify-content: space-between; height: 600px;">
+    <div style="border: 2px solid black; width: 500px; margin:100px;">
+        <h1> New Dojo</h1>
+        <label style="margin-top: 50px;" for="name">Name:</label>
+            <input type="text" name="name"><br>
+        <input style="margin: 20px;" type="submit" value="create user" class="btn btn-success">  
+    </div>
+
+    <div style="border: 2px solid black; width: 700px;height: 500px; margin:100px;">
+        <table>
+        {% for user in display %}
+        <tr>
+            <td><h3><a href="/dojo/{{user.id}}">{{user.name}}</a></h3></td>
+        </tr>
+        {% endfor %}
+    
+    </table>
+    </div>
+    </form>
+</div>
+<h3><a style="margin-left: 60%; margin-top: 20px;" href="/ninjas">add ninja</a></h3>
+    
+</body>
+</html>
